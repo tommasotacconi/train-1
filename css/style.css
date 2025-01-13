@@ -12,7 +12,9 @@ body {
 
 header {
   width: 1040px;
-	height: 440px; 
+	height: 350px;
+	border-radius: 0 0 50px 50px;
+	
   position: fixed;
   top: 0px;
 	left: calc((100vw - 1040px) / 2) ;
@@ -22,6 +24,15 @@ header {
   font-weight: 600;
   font-size: 12px;
 	background-image: url(../images/header-bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 130px;
+	background-color: blue;
+}
+
+h1 {
+	height: 60%;
+	line-height: 400%;
+	vertical-align: middle;
 }
 
 /* footer {
