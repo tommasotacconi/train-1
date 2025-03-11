@@ -233,11 +233,7 @@
 }
 
 /* padding technique for columns */
-.col {
-	padding: 1rem;
-}
-
-.row.g-1 {
+/* .row.g-1 {
 	margin: -0.5rem;
 }
 
@@ -260,7 +256,7 @@
 
 .row.g-3 > .col {
 	padding: 1.5rem;
-}
+} */
 
 /*  */
 

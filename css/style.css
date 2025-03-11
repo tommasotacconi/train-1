@@ -1,13 +1,7 @@
-/* Css reset */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 /* Generics */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Livvic', Arial, Helvetica, sans-serif;
+	font-size: 2.2rem;
 }
 
 header {
@@ -17,7 +11,7 @@ header {
 	
   position: fixed;
   top: 0px;
-	left: calc((100vw - 1040px) / 2) ;
+	left: calc((100% - 1040px) / 2) ;
 	
   z-index: 1;
   color: white;
@@ -76,27 +70,35 @@ h1 {
 
 /* Utilities */
 .container {
-	max-width: 1040px;
+	max-width: calc(1040px + var(--bs-gutter-x) * 0.5 * 2) ;
 	margin: 380px auto 0;
 }
 
 .col {
-	padding: 10px;
 	flex-basis: calc(100% / 8);
 }
 
-.calendar-cell {
+.calendar-card {
 	border-radius: 25px;
 	background-color: green;
 
 	text-align: center;
 	aspect-ratio: 1;
+
+	img {
+		height: 40%;
+		margin: 0 auto;
+	}
+
+	span.card-text {
+		font-weight: 700;
+		color: #fff;
+		display: block;
+	}
 }
 
 .col:last-child {
-	padding: 10px 0;
-
-	.calendar-cell {
+	.calendar-card {
 		aspect-ratio: 9/1;
 	}
 }
