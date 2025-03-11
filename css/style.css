@@ -75,3 +75,29 @@ h1 {
 } */
 
 /* Utilities */
+.container {
+	max-width: 1040px;
+	margin: 380px auto 0;
+}
+
+.col {
+	padding: 10px;
+	flex-basis: calc(100% / 8);
+}
+
+.calendar-cell {
+	border-radius: 25px;
+	background-color: green;
+
+	text-align: center;
+	aspect-ratio: 1;
+}
+
+.col:last-child {
+	padding: 10px 0;
+
+	.calendar-cell {
+		aspect-ratio: 9/1;
+	}
+}
+	
